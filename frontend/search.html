@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Roommates - RoomMates Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🏠</span>
+                <span class="logo-text">RoomMates Connect</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html">Sign-Up</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="search.html" class="active">Search</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <h2>Find Your Perfect Roommate</h2>
+            <div class="search-layout">
+                <!-- Filters Sidebar -->
+                <div class="filters-sidebar">
+                    <div class="filters-header">
+                        <h3>🔍 Filters</h3>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>College</label>
+                        <input type="text" placeholder="e.g., State University">
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Gender</label>
+                        <select>
+                            <option>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Non-binary</option>
+                            <option>Any</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Age Range: 18-25</label>
+                        <input type="range" min="18" max="30" value="25">
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Sleep Schedule</label>
+                        <select>
+                            <option>Select Schedule</option>
+                            <option>Early Bird</option>
+                            <option>Night Owl</option>
+                            <option>Flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Noise Tolerance</label>
+                        <select>
+                            <option>Select Tolerance</option>
+                            <option>Quiet Preferred</option>
+                            <option>Moderate</option>
+                            <option>Social/Loud OK</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Cleanliness</label>
+                        <select>
+                            <option>Select Preference</option>
+                            <option>Very Clean</option>
+                            <option>Moderately Clean</option>
+                            <option>Relaxed</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-buttons">
+                        <button class="apply-filters">Apply Filters</button>
+                        <button class="clear-filters">Clear Filters</button>
+                    </div>
+                </div>
+
+                <!-- Search Results -->
+                <div class="search-results">
+                    <!-- Featured Profile -->
+                    <div class="featured-profile">
+                        <div class="profile-image">
+                            <img src="https://images.pexels.com/photos/4050432/pexels-photo-4050432.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Alice Johnson">
+                        </div>
+                        <div class="profile-info">
+                            <div class="profile-header">
+                                <h3>Alice Johnson</h3>
+                                <span class="match-score">92% Match</span>
+                            </div>
+                            <p class="profile-subtitle">Computer Science Student at State University</p>
+                            <div class="profile-tags">
+                                <span class="tag">Female, 20</span>
+                                <span class="tag">Early Riser</span>
+                                <span class="tag">Quiet Preferred</span>
+                                <span class="tag">Very Clean</span>
+                            </div>
+                            <div class="profile-description">
+                                <h4>About Alice Johnson</h4>
+                                <p>Enthusiastic CS student looking for a calm and organized living environment. Loves quiet evenings and productive study sessions. Enjoys exploring nature trails on weekends.</p>
+                                
+                                <h4>Lifestyle Preferences</h4>
+                                <div class="preferences-grid">
+                                    <div class="preference-item">
+                                        <span class="preference-icon">✓</span>
+                                        <span>Sleep: Early Riser</span>
+                                    </div>
+                                    <div class="preference-item">
+                                        <span class="preference-icon">✓</span>
+                                        <span>Noise: Quiet Preferred</span>
+                                    </div>
+                                    <div class="preference-item">
+                                        <span class="preference-icon">✓</span>
+                                        <span>Cleanliness: Very Clean</span>
+                                    </div>
+                                    <div class="preference-item">
+                                        <span class="preference-icon">✓</span>
+                                        <span>Age: 20 years old</span>
+                                    </div>
+                                </div>
+
+                                <h4>Interests & Hobbies</h4>
+                                <div class="interests-tags">
+                                    <span class="interest-tag">Reading</span>
+                                    <span class="interest-tag">Hiking</span>
+                                    <span class="interest-tag">Coding</span>
+                                </div>
+                            </div>
+                            <button class="connect-button" onclick="window.location.href='match.html'">💬 Connect</button>
+                        </div>
+                    </div>
+
+                    <!-- Results List -->
+                    <div class="results-header">
+                        <h3>Search Results (8)</h3>
+                    </div>
+
+                    <div class="results-list">
+                        <div class="result-card">
+                            <div class="result-image">
+                                <img src="https://images.pexels.com/photos/4050432/pexels-photo-4050432.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Alice Johnson">
+                            </div>
+                            <div class="result-info">
+                                <h4>Alice Johnson</h4>
+                                <p>State University</p>
+                                <div class="match-bar">
+                                    <span>92% Match</span>
+                                    <div class="match-progress">
+                                        <div class="match-fill" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                                <div class="result-tags">
+                                    <span class="tag">Female</span>
+                                    <span class="tag">Early Riser</span>
+                                    <span class="tag">Very Clean</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-image">
+                                <img src="https://images.pexels.com/photos/4050447/pexels-photo-4050447.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Ben Carter">
+                            </div>
+                            <div class="result-info">
+                                <h4>Ben Carter</h4>
+                                <p>Community College</p>
+                                <div class="match-bar">
+                                    <span>85% Match</span>
+                                    <div class="match-progress">
+                                        <div class="match-fill" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="result-tags">
+                                    <span class="tag">Male</span>
+                                    <span class="tag">Flexible</span>
+                                    <span class="tag">Tidy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-image">
+                                <img src="https://images.pexels.com/photos/4050451/pexels-photo-4050451.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chloe Davis">
+                            </div>
+                            <div class="result-info">
+                                <h4>Chloe Davis</h4>
+                                <p>Central Arts College</p>
+                                <div class="match-bar">
+                                    <span>78% Match</span>
+                                    <div class="match-progress">
+                                        <div class="match-fill" style="width: 78%"></div>
+                                    </div>
+                                </div>
+                                <div class="result-tags">
+                                    <span class="tag">Non-binary</span>
+                                    <span class="tag">Night Owl</span>
+                                    <span class="tag">Relaxed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-image">
+                                <img src="https://images.pexels.com/photos/4050466/pexels-photo-4050466.jpeg?auto=compress&cs=tinysrgb&w=100" alt="David Lee">
+                            </div>
+                            <div class="result-info">
+                                <h4>David Lee</h4>
+                                <p>Tech Institute</p>
+                                <div class="match-bar">
+                                    <span>82% Match</span>
+                                    <div class="match-progress">
+                                        <div class="match-fill" style="width: 82%"></div>
+                                    </div>
+                                </div>
+                                <div class="result-tags">
+                                    <span class="tag">Male</span>
+                                    <span class="tag">Early Riser</span>
+                                    <span class="tag">Very Clean</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-image">
+                                <img src="https://images.pexels.com/photos/4050470/pexels-photo-4050470.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Eva Rodriguez">
+                            </div>
+                            <div class="result-info">
+                                <h4>Eva Rodriguez</h4>
+                                <p>City University</p>
+                                <div class="match-bar">
+                                    <span>79% Match</span>
+                                    <div class="match-progress">
+                                        <div class="match-fill" style="width: 79%"></div>
+                                    </div>
+                                </div>
+                                <div class="result-tags">
+                                    <span class="tag">Female</span>
+                                    <span class="tag">Flexible</span>
+                                    <span class="tag">Tidy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn">‹</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🏠</span>
+                    <span class="logo-text">RoomMates Connect</span>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RoomMates Connect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

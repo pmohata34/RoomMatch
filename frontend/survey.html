@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Survey - RoomMates Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🏠</span>
+                <span class="logo-text">RoomMates Connect</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html">Sign-Up</a></li>
+                <li><a href="survey.html" class="active">Survey</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Survey Section -->
+    <section class="survey-section">
+        <div class="container">
+            <div class="survey-card">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 66%"></div>
+                </div>
+                
+                <h2>Lifestyle Preferences</h2>
+                <p>Help us find your perfect roommate by telling us about your habits.</p>
+
+                <div class="survey-question">
+                    <h3>What is your preferred sleep schedule?</h3>
+                    <p>Tell us about your typical sleep patterns.</p>
+
+                    <div class="preference-options">
+                        <div class="preference-option" data-value="early-bird">
+                            <div class="option-image">
+                                <img src="https://images.pexels.com/photos/1323712/pexels-photo-1323712.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Early Bird">
+                            </div>
+                            <h4>Early Bird</h4>
+                            <p>Up early, asleep early.</p>
+                        </div>
+                        <div class="preference-option" data-value="night-owl">
+                            <div class="option-image">
+                                <img src="https://images.pexels.com/photos/1323712/pexels-photo-1323712.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Night Owl">
+                            </div>
+                            <h4>Night Owl</h4>
+                            <p>Late to bed, late to rise.</p>
+                        </div>
+                        <div class="preference-option" data-value="flexible">
+                            <div class="option-image">
+                                <div class="flexible-icon">⚡</div>
+                            </div>
+                            <h4>Flexible</h4>
+                            <p>Can adapt to various schedules.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="survey-question">
+                    <h3>How clean do you keep your living space?</h3>
+                    <div class="preference-options">
+                        <div class="preference-option" data-value="very-clean">
+                            <h4>Very Clean</h4>
+                            <p>Everything in its place, daily cleaning</p>
+                        </div>
+                        <div class="preference-option" data-value="moderately-clean">
+                            <h4>Moderately Clean</h4>
+                            <p>Regular cleaning, organized most of the time</p>
+                        </div>
+                        <div class="preference-option" data-value="relaxed">
+                            <h4>Relaxed</h4>
+                            <p>Lived-in feel, clean when needed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="survey-question">
+                    <h3>How do you prefer to study?</h3>
+                    <div class="preference-options">
+                        <div class="preference-option" data-value="quiet-study">
+                            <h4>Quiet Environment</h4>
+                            <p>Need silence to focus and concentrate</p>
+                        </div>
+                        <div class="preference-option" data-value="background-music">
+                            <h4>Background Music</h4>
+                            <p>Light music or ambient sounds help</p>
+                        </div>
+                        <div class="preference-option" data-value="group-study">
+                            <h4>Group Study</h4>
+                            <p>Prefer studying with others</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="survey-question">
+                    <h3>Social Preferences</h3>
+                    <div class="preference-options">
+                        <div class="preference-option" data-value="social-butterfly">
+                            <h4>Social Butterfly</h4>
+                            <p>Love having friends over regularly</p>
+                        </div>
+                        <div class="preference-option" data-value="moderate-social">
+                            <h4>Moderate Social</h4>
+                            <p>Occasional gatherings are perfect</p>
+                        </div>
+                        <div class="preference-option" data-value="prefer-quiet">
+                            <h4>Prefer Quiet</h4>
+                            <p>Like a peaceful, calm environment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="next-button" onclick="window.location.href='search.html'">
+                    Next <span class="arrow">→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🏠</span>
+                    <span class="logo-text">RoomMates Connect</span>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RoomMates Connect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
