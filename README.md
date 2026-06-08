@@ -1,19 +1,21 @@
 # RoomMates Connect
 
-RoomMates Connect is a full-stack roommate matching app with an Express API in `backend/` and a static Vite-based frontend in `frontend/`.
+RoomMates Connect is a full-stack roommate matching app with an Express API in `backend/` and a Vite-based frontend in `frontend/`.
 
 ## Features
 
 - User registration and login with JWT auth
 - Profile management and lifestyle survey submission
 - Match discovery, filtering, and match status updates
-- Static frontend pages for onboarding, survey flow, search, and match confirmation
+- Frontend pages for onboarding, survey flow, search, and match confirmation
 
 ## Project Structure
 
-- `backend/` - Express API, in-memory data stores, and route handlers
-- `frontend/` - HTML, CSS, and browser-side JavaScript for the UI
-- `package.json` - root scripts for launching the backend and installing both app packages
+```text
+backend/      Express API, in-memory data stores, and route handlers
+frontend/     Vite frontend for the user interface
+package.json  Root scripts for launching the backend and installing both app packages
+```
 
 ## Requirements
 
@@ -29,7 +31,7 @@ npm install
 npm run setup
 ```
 
-The root `package.json` also includes separate helpers if you want to install one side at a time:
+The root `package.json` also includes separate helpers:
 
 ```bash
 npm run install-backend
@@ -44,9 +46,9 @@ Start the backend API from the project root:
 npm start
 ```
 
-This runs the API on `http://localhost:3000` by default.
+The API runs on `http://localhost:3000` by default.
 
-For local frontend development, start the frontend from the `frontend/` folder:
+For local frontend development:
 
 ```bash
 cd frontend
@@ -59,33 +61,25 @@ The backend allows CORS from `http://localhost:8080`, which matches the default 
 
 Base URL: `http://localhost:3000/api`
 
-- `GET /health` - health check
-- `POST /auth/register` - register a new user
-- `POST /auth/login` - log in and receive a JWT
-- `GET /auth/me` - get the authenticated user
-- `GET /users/profile` - get the current user profile
-- `PUT /users/profile` - update the current user profile
-- `GET /users/all` - list completed profiles for matching
-- `GET /users/:id` - get a user by ID
-- `DELETE /users/profile` - delete the current account
-- `GET /survey/questions` - get survey questions for the frontend
-- `POST /survey/submit` - submit survey responses
-- `GET /survey/responses` - fetch the current survey responses
-- `PUT /survey/responses` - update survey responses
-- `GET /matches/potential` - get compatible matches
-- `GET /matches/current` - get current matches
-- `POST /matches/create` - create a new match
-- `PUT /matches/:matchId/status` - update a match status
+- `GET /health` - Health check
+- `POST /auth/register` - Register a new user
+- `POST /auth/login` - Log in and receive a JWT
+- `GET /auth/me` - Get the authenticated user
+- `GET /users/profile` - Get the current user profile
+- `PUT /users/profile` - Update the current user profile
+- `GET /users/all` - List completed profiles for matching
+- `GET /users/:id` - Get a user by ID
+- `DELETE /users/profile` - Delete the current account
+- `GET /survey/questions` - Get survey questions
+- `POST /survey/submit` - Submit survey responses
+- `GET /survey/responses` - Fetch current survey responses
+- `PUT /survey/responses` - Update survey responses
+- `GET /matches/potential` - Get compatible matches
+- `GET /matches/current` - Get current matches
+- `POST /matches/create` - Create a new match
+- `PUT /matches/:matchId/status` - Update match status
 
 ## Notes
 
 - The backend currently stores users and matches in memory, so data resets when the server restarts.
 - Set `PORT`, `FRONTEND_URL`, and `JWT_SECRET` in the environment if you want to override the defaults.
-
-## Frontend Pages
-
-- `index.html` - landing page
-- `signup.html` - sign-up flow
-- `survey.html` - lifestyle survey
-- `search.html` - match search and filtering UI
-- `match.html` - match confirmation screen
